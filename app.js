@@ -19,6 +19,6 @@ app.get("/", async (req, res) => {
     browser.close();
   } catch (error) {
       browser.close();
-      res.send(500, error);
+      res.send(500, error.message);
   }
 });

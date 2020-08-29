@@ -59,7 +59,7 @@ app.get("/", function _callee(req, res) {
           _context.prev = 21;
           _context.t0 = _context["catch"](0);
           browser.close();
-          res.send(500, _context.t0);
+          res.send(500, _context.t0.message);
 
         case 25:
         case "end":
