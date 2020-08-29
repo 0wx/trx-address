@@ -18,7 +18,7 @@ app.get("/", async (req, res) => {
     res.json({ address, passphrase });
     browser.close();
   } catch (error) {
-      browser.close();
-      res.send(500, error.message);
+    browser.close();
+    res.send(500, error.message);
   }
 });
